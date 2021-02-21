@@ -4,5 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <meta name="description" content="@yield('description')">
-    <!-- 以下省略 -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- あとで考える -->
 @endsection
