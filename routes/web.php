@@ -12,3 +12,12 @@
 */
 
 Route::get('/', 'TopController@index');
+
+Route::get('/writer', function () {
+    return view('/auth/login');
+});
+
+// Route::get('/writer', 'TopController@index');
+
+Route::prefix('writer')->middleware(['auth'])->group(function () {
+});
