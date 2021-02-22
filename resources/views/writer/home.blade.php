@@ -3,11 +3,20 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>写真を投稿</h1>
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    <div class="post_form">
+        <form method="POST" action="/writer" enctype="multipart/form-data">
+
+        {{ csrf_field() }}
+
+        <input type="file" id="file" name="file" class="form-control">
+
+        <button type="submit">アップロード</button>
+
+    </div>
 @stop
 
 @section('css')
