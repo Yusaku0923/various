@@ -6,37 +6,80 @@
     top: 0;
     left: 0;
     z-index: 10;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    padding: 3.75vw 4.375vw 3.75vw 1.95312vw;
+    height: 130px;
+    // padding: 50px 80px 10px 80px;
+    // margin: 0 10px 0 10px;
     background: transparent;
     /* opacity: 0; */
     /* animation: fadeIn 1.5s .2s forwards; */
-    background-color: brown;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    // border-bottom: solid 1px #87cefa;
     z-index: 0;
-    .title {
-        width: 20%;
-        height: 80px;
+    .border {
+        width: 94%;
+        padding: 50px 0 0 80px;
+        margin: 0 3% 0 3%;
+        border-bottom: solid 1.5px #87cefa;
         display: flex;
-        /* justify-content: space-between; */
-        background-color: darkgoldenrod;
-        .top_icon {
-            width: 80px;
+        justify-content: space-between;
+        .title {
+            width: 20%;
             height: 80px;
-            background-color: darkblue;
-        }
-        .top_title {
-            /* padding: 10px; */
-            margin-left: 10px;
-            .upper {
-                margin-bottom: 0;
+            display: flex;
+            /* justify-content: space-between; */
+            background-color: darkgoldenrod;
+            .top_icon {
+                width: 80px;
+                height: 80px;
+                background-color: darkblue;
             }
-            .downer {
-                margin-top: 0;
+            .top_title {
+                /* padding: 10px; */
                 margin-left: 10px;
+                .upper {
+                    margin-bottom: 0;
+                }
+                .downer {
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
             }
         }
+        .holder {
+            color: #87cefa;
+            width: 20%;
+            padding-bottom: 0;
+            position: relative;
+            p {
+                margin: 5px 0 0;
+            }
+            .number {
+                border-bottom: solid 1.5px #87cefa;
+            }
+            .date {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.top_body {
+    // height: 5000px;
+    width: 94%;
+    margin: 0 3% 0 3%;
+    margin-top: 130px;
+    .sub_title {
+        height: 60px;
+        border-bottom: solid 1.5px #87cefa;
+    }
+    .content {
+        height: 5000px;
+        margin-top: 10px; // こいつなに
+        background: repeating-linear-gradient(0deg, #ffffff 0, #ffffff 29px, #87cefa 29px, #87cefa 30px);
     }
 }
 
@@ -48,7 +91,7 @@
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #000;
+    background: #87cefa;
     z-index: 1;
 }
 

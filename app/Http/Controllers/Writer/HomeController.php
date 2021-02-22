@@ -17,10 +17,6 @@ class HomeController extends Controller
 
     public function create(Request $request)
     {
-        // 名前生成
-        // $name = substr(str_shuffle('1234567890abcdefghijklmnopqrstuvwxyz'), 0, 8);
-        // $name .= date('_Y_m_d');
-        // dd($request->file('file'));
         $path = Storage::putFile('', $request->file('file'));
         Image::query()->insert([
             'user_id' => Auth::id(),
