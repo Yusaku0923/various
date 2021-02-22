@@ -1,36 +1,29 @@
 // ヘッダーCSS
 .h_parent {
-    /* width: 100%; */
-    /* height: ; */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
     width: 100%;
     height: 130px;
-    // padding: 50px 80px 10px 80px;
-    // margin: 0 10px 0 10px;
     background: transparent;
-    /* opacity: 0; */
-    /* animation: fadeIn 1.5s .2s forwards; */
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    // border-bottom: solid 1px #87cefa;
     z-index: 0;
     .border {
         width: 94%;
-        padding: 50px 0 0 80px;
+        padding: 25px 0 0 30px;
         margin: 0 3% 0 3%;
         border-bottom: solid 1.5px #87cefa;
         display: flex;
         justify-content: space-between;
         .title {
-            width: 20%;
+            width: 50%;
             height: 80px;
             display: flex;
             /* justify-content: space-between; */
-            background-color: darkgoldenrod;
+            // background-color: darkgoldenrod;
             .top_icon {
                 width: 80px;
                 height: 80px;
@@ -41,6 +34,9 @@
                 margin-left: 10px;
                 .upper {
                     margin-bottom: 0;
+                    font-size: 25px;
+                    font-family: 'ＭＳ 明朝';
+                    font-weight: 300;
                 }
                 .downer {
                     margin-top: 0;
@@ -58,6 +54,7 @@
             }
             .number {
                 border-bottom: solid 1.5px #87cefa;
+                margin-top: 40px;
             }
             .date {
                 position: absolute;
@@ -75,6 +72,30 @@
     .sub_title {
         height: 60px;
         border-bottom: solid 1.5px #87cefa;
+        padding: 30px 60px 0 60px;
+        nav {
+            text-align: center;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            width: 18%;
+            min-width: 90px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul li.current a {
+            color: #F33135;
+        }
+        nav ul li a:hover {
+            color: #E7DA66;
+        }
     }
     .content {
         height: 5000px;

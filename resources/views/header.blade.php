@@ -6,8 +6,8 @@
 
                 </div>
                 <div class="top_title">
-                    <p class="upper">Title1</p>
-                    <p class="downer">Title2</p>
+                    <p class="upper">そういえばギャラリー</p>
+                    {{-- <p class="downer">Title2</p> --}}
                 </div>
             </div>
 
