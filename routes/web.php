@@ -13,11 +13,8 @@
 
 Route::get('/', 'TopController@index');
 
-Route::get('/writer', function () {
-    return view('/auth/login');
-});
-
-// Route::get('/writer', 'TopController@index');
-
+Auth::routes();
 Route::prefix('writer')->middleware(['auth'])->group(function () {
+    Route::get('/', 'Writer\HomeController@index')->name('/writer'); // ログイン直後のページ
+
 });
