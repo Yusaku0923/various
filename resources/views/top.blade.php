@@ -12,7 +12,7 @@
     <a href="https://dream-lab.work/">この辺りどう?</a>
     <a href="https://sg-g.jp/">この辺りどう?</a> --}}
     <div class="top_body">
-        <div class="sub_title">
+        {{-- <div class="sub_title">
             <nav>
                 <ul>
                     <li class="current"><a href="#">Home</a></li>
@@ -22,9 +22,14 @@
                     <li><a href=”#”>Blog</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> --}}
         <div class="content">
-
+            <div class="top_comment">
+                <img class="left_upper_tape" src="./img/mt04_others004_256x64.png" alt="マスキング">
+                <h2>About This Site</h2>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <img class="left_downer_tape" src="./img/mt04_others004_256x64.png" alt="マスキング">
+            </div>
         </div>
     </div>
 

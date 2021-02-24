@@ -100,7 +100,7 @@ $(function () {
 });
 $(window).load(function () {
   //全ての読み込みが完了したら実行
-  // sleep(5000);
+  // sleep(100000);
   $('#loader-bg').delay(900).fadeOut(800);
   $('#loader').delay(600).fadeOut(300);
   $('#wrap').css('display', 'block');
