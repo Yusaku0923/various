@@ -12,8 +12,10 @@
             </div>
 
             <div class="holder">
-                <p class="number">NO.</p>
-                <p class="date">DATE </p>
+                <p class="number_label">NO.</p>
+                <p class="number"> 999</p>
+                <p class="date_label">DATE </p>
+                <p class="date">1997.09.23</p>
             </div>
         </div>
         <div class="sub_title">

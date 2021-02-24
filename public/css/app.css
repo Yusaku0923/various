@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 #loader-bg {
   display: none;
   position: fixed;
@@ -64,7 +62,7 @@
 .h_parent .border .title .top_title .upper {
   margin-bottom: 0;
   font-size: 25px;
-  font-family: "\FF2D\FF33   \660E\671D";
+  font-family: "Comic Sans MS";
   font-weight: 300;
 }
 
@@ -84,20 +82,39 @@
   margin: 5px 0 0;
 }
 
-.h_parent .border .holder .number {
+.h_parent .border .holder .number_label {
   border-bottom: solid 1.5px #87cefa;
   margin-top: 20px;
+}
+
+.h_parent .border .holder .date_label {
+  position: absolute;
+  bottom: 0;
+}
+
+.h_parent .border .holder .number {
+  position: absolute;
+  bottom: 35px;
+  right: 35%;
+  font-size: 20px;
+  color: #333;
+  font-family: "Comic Sans MS";
 }
 
 .h_parent .border .holder .date {
   position: absolute;
   bottom: 0;
+  right: 20%;
+  font-size: 20px;
+  color: #333;
+  font-family: "Comic Sans MS";
 }
 
 .h_parent .sub_title {
   height: 40px;
   border-bottom: solid 1.5px #87cefa;
   padding: 20px 60px 0 60px;
+  font-family: "Comic Sans MS";
 }
 
 .h_parent .sub_title nav {
@@ -151,6 +168,7 @@
   margin: 0 auto;
   padding: 10px 15px;
   border: solid 3px #faf0e6;
+  font-family: "Comic Sans MS";
 }
 
 .top_body .content .top_comment .left_upper_tape {
