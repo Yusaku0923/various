@@ -6,12 +6,14 @@ $(function() {
 });
 
 $(window).load(function() { //全ての読み込みが完了したら実行
-    // sleep(3000);
-    $('.right-upper-tx').delay(2000).queue(function() {
+    // sleep(300000);
+    $('.right-upper-tx').delay(4000).queue(function() {
         $(this).show(); // はいチーズ表示
+        $('.loading-tx').hide();
+        $('.complete-tx').show();
     });
     // $('#flash').delay(4900).queue(function() {
-    $('.p-flash').delay(3500).queue(function() {
+    $('.p-flash').delay(5500).queue(function() {
         $(this).toggleClass('open');
         $('#loader-bg').delay(500).fadeOut(100);
         $('#loader').delay(500).fadeOut(100);
