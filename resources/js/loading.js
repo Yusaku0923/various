@@ -6,14 +6,26 @@ $(function() {
 });
 
 $(window).load(function() { //全ての読み込みが完了したら実行
-    // sleep(100000);
-    $('#loader-bg').delay(900).fadeOut(800);
-    $('#loader').delay(600).fadeOut(300);
-    $('#wrap').css('display', 'block');
+    // sleep(3000);
+    $('.right-upper-tx').delay(2000).queue(function() {
+        $(this).show(); // はいチーズ表示
+    });
+    // $('#flash').delay(4900).queue(function() {
+    $('.p-flash').delay(3500).queue(function() {
+        $(this).toggleClass('open');
+        $('#loader-bg').delay(500).fadeOut(100);
+        $('#loader').delay(500).fadeOut(100);
+        $('#wrap').css('display', 'block');
+        $('#flash').delay(1500).fadeOut(1000);
+    });
+    // $('#loader-bg').delay(4900).fadeOut(800);
+    // $('#loader').delay(4600).fadeOut(300);
+    // $('#wrap').css('display', 'block');
 });
 
 function sleep(waitMsec) {
     var startMsec = new Date();
+    console.log('a');
 
     // 指定ミリ秒間だけループさせる（CPUは常にビジー状態）
     while (new Date() - startMsec < waitMsec);
