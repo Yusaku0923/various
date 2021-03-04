@@ -1,1 +1,157 @@
-//
+$usually_font: 'Comic Sans MS';
+// ヘッダーCSS
+.h_parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 94%;
+    // height: 130px;
+    // background: transparent;
+    background-color: #ffffff;
+    // display: flex;
+    // justify-content: space-between;
+    padding: 0 3% 0 3%;
+    .border {
+        width: 97%;
+        padding: 25px 0 0 3%;
+        // margin: 0 3% 0 3%;
+        border-bottom: solid 1.5px #87cefa;
+        display: flex;
+        justify-content: space-between;
+        .title {
+            width: 50%;
+            height: 80px;
+            display: flex;
+            /* justify-content: space-between; */
+            // background-color: darkgoldenrod;
+            .top_icon {
+                width: 80px;
+                height: 80px;
+                background-color: darkblue;
+            }
+            .top_title {
+                /* padding: 10px; */
+                margin-left: 10px;
+                .upper {
+                    margin-bottom: 0;
+                    font-size: 25px;
+                    font-family: $usually_font;
+                    font-weight: 300;
+                }
+                .downer {
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .holder {
+            color: #87cefa;
+            width: 20%;
+            padding-bottom: 0;
+            position: relative;
+            p {
+                margin: 5px 0 0;
+            }
+            .number_label {
+                border-bottom: solid 1.5px #87cefa;
+                margin-top: 20px;
+            }
+            .date_label {
+                position: absolute;
+                bottom: 0;
+            }
+            .number {
+                position: absolute;
+                bottom: 35px;
+                right: 35%;
+                font-size: 20px;
+                color: #333;
+                font-family: $usually_font;
+            }
+            .date {
+                position: absolute;
+                bottom: 0;
+                right: 20%;
+                font-size: 20px;
+                color: #333;
+                font-family: $usually_font;
+            }
+        }
+    }
+    .sub_title {
+        height: 40px;
+        border-bottom: solid 1.5px #87cefa;
+        padding: 20px 60px 0 60px;
+        // margin: 0 3% 0 3%;
+        font-family: 'Comic Sans MS';
+        nav {
+            text-align: center;
+            font-size: 20px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            width: 18%;
+            min-width: 90px;
+            opacity: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul li.current a {
+            color: #F33135;
+        }
+        nav ul li a:hover {
+            color: #87cefa;
+        }
+    }
+}
+
+.top_body {
+    // height: 5000px;
+    width: 94%;
+    margin: 173px 3%;
+    .content {
+        height: 5000px;
+        // margin-top: 10px; // こいつなに
+        background: repeating-linear-gradient(0deg, #ffffff 0px, #ffffff 29px, #87cefa 29px, #87cefa 30px);
+        padding-top: 35px;
+        z-index: 1;
+        .top_comment {
+            position: relative;
+            width: 70%;
+            background-color: #fffaf0;
+            z-index: auto;
+            margin: 0 auto;
+            padding: 10px 15px;
+            border: solid 3px #faf0e6;
+            font-family: $usually_font;
+            .left_upper_tape {
+                position: absolute;
+                top: 5px;
+                left: -35px;
+                // transform-style: flat;
+                width: 100px;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+            }
+            .left_downer_tape {
+                position: absolute;
+                bottom: 5px;
+                right: -35px;
+                // transform-style: flat;
+                width: 100px;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+// topページCSS(ファイル分けるか考える)

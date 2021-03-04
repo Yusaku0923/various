@@ -1,0 +1,45 @@
+.h_parent {
+  /* width: 100%; */
+  /* height: ; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3.75vw 4.375vw 3.75vw 1.95312vw;
+  background: transparent;
+  /* opacity: 0; */
+  /* animation: fadeIn 1.5s .2s forwards; */
+  background-color: brown;
+
+}
+
+.h_title {
+  width: 20%;
+  height: 80px;
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: darkgoldenrod;
+}
+
+.top_icon {
+  width: 80px;
+  height: 80px;
+  background-color: darkblue;
+}
+
+.top_title {
+  /* padding: 10px; */
+  margin-left: 10px;
+}
+
+.upper {
+  margin-bottom: 0;
+}
+
+.downer {
+  margin-top: 0;
+  margin-left: 10px;
+}

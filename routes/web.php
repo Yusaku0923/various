@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'TopController@index');
+
+Auth::routes();
+Route::prefix('writer')->middleware(['auth'])->group(function () {
+    Route::get('/', 'Writer\HomeController@index')->name('/writer'); // ログイン直後のページ
+    Route::post('/', 'Writer\HomeController@create')->name('/writer/create'); // ログイン直後のページ
 });
